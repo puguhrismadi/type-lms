@@ -1,4 +1,5 @@
 import { BellDot, Search } from "lucide-react";
+import { NavbarRoutes } from "./navbar-routes";
 const Header = () => {
   return (
     <div className="p-4 bg-white flex justify-between">
@@ -16,9 +17,7 @@ const Header = () => {
       {/* Get Started Button */}
       <div className="flex items-center gap-4">
         <BellDot className="w-6 h-6 text-gray-500 hover:text-primary" />
-        <button className="bg-primary text-white rounded-md px-4 py-2">
-          Get Started
-        </button>
+        <NavbarRoutes />
       </div>
     </div>
   );

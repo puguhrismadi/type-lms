@@ -1,4 +1,4 @@
-import WelcomeBanner from "../courses/_components/WelcomBanner";
+import WelcomeBanner from "./_components/WelcomBanner";
 
 const CoursePage = () => {
     return (
