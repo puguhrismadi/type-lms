@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { LogOut } from "lucide-react";
+import { LogIn, LogOut } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 export const NavbarRoutes = () => {
@@ -14,7 +14,7 @@ export const NavbarRoutes = () => {
             {isTeacherPage || isPlayerPage ? 
                 <Button onClick={() => router.push("/")}><LogOut/>Exit</Button>
                 :
-                <Button variant="ghost" size="sm"  className="font-bold" onClick={() => router.push("/teacher/courses")}>Teacher Mode</Button>
+                <Button variant="ghost" size="sm"  className="font-bold" onClick={() => router.push("/teacher/courses")}><LogIn/>Teacher Mode</Button>
             }
             
         </div>
